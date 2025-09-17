@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanical Engineering Portfolio</title>
+    <!-- Inter Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        /* Smooth scrolling for internal links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-900">Project Portfolio</h1>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-gray-900 transition duration-300">About</a>
+                <a href="#projects" class="text-gray-600 hover:text-gray-900 transition duration-300">Projects</a>
+                <a href="#resume" class="text-gray-600 hover:text-gray-900 transition duration-300">Resume</a>
+                <a href="#contact" class="text-gray-600 hover:text-gray-900 transition duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 text-center md:text-left flex flex-col-reverse md:flex-row items-center justify-center gap-12">
+        <div class="flex-1">
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">
+                Drake Elliott
+            </h2>
+            <p class="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto md:mx-0">
+                I'm a passionate and driven mechanical engineering student from MIT with extensive hands-on experience in robotics, mechatronics, and advanced prototyping. I thrive on solving complex design and engineering challenges, and I'm eager to apply my skills to innovative projects.
+            </p>
+            <a href="#projects" class="inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition duration-300">
+                View My Projects
+            </a>
+        </div>
+        <div class="flex-shrink-0 w-64 h-64 sm:w-64 sm:h-64 rounded-full overflow-hidden shadow-xl ring-4 ring-blue-500 ring-opacity-50">
+            <!-- Placeholder for professional headshot -->
+            <img src="portfolio_headshot.jpg" alt="Professional headshot" class="object-cover w-full h-full">
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 my-12 bg-white rounded-xl shadow-lg">
+        <h2 class="text-4xl font-bold text-center mb-6 text-gray-900">About Me</h2>
+        <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto" style="margin-bottom: 20px;">
+                I am a senior at the Massachusetts Institute of Technology, pursuing a Bachelor of Science in Mechanical Engineering, and am passionate about mechanical design, robotics, and engineering leadership. I have diverse experience in both research and industry, from designing and prototyping soft robots to developing assistive devices. Through rigorous coursework, I have acquired a strong foundation in mechanics, dynamics, controls, fluid dynamics, manufacturing, and more.
+        </p>
+        <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto">
+                Beyond my technical skills, I am a captain of the men’s heavyweight rowing team at MIT and a participant in the Gordon-MIT Engineering Leadership Program. Through these experiences, I’ve developed robust leadership, teamwork, and communication abilities that are applicable in many industry environments.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Featured Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Project Card 1: Yo-yo Manufacturing -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="008 yoyo/yoyo cad.png" alt="Yoyo cad" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Custom Yo-Yo Manufacturing</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Designed, manufactured, and analyzed 50 yo-yos with an integrated speaker, addressing key engineering challenges like press-fit mechanics and cost-effective large-scale production</p>
+                    <a href="008 yoyo/team h yoyo poster.pdf" target="_blank" class="inline-block text-blue-600 font-medium hover:underline">View Project Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project Card 2: Spring Loaded Double Pantograph -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="sldp/cad_ss.png" alt="sldp-robot" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Exercise Assistive Device</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Developed and tested a robotic mechanism designed to prevent falls in elderly individuals during exercise, offering seamless support and fall protection without restricting natural movement</p>
+                    <a href="https://spring-loaded-double-pentograph-robot.github.io/" class="inline-block text-blue-600 font-medium hover:underline">View Project Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project Card 3: Rowing Paper -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="671 paper/catch_position.jpeg" alt="force analysis in rowing" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Force Analysis in Rowing</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Investigated how rowing stroke rate affects the balance of forces on a rower's body, using a dynamic ergometer and specialized sensors to measure asymmetry in real-time</p>
+                    <a href="671 paper/Elliott_D_GoForth_FinalPaper_ForceAsymmetry_2Column.pdf" class="inline-block text-blue-600 font-medium hover:underline">View Project Details &rarr;</a>
+                </div>
+            </div>
+            
+            <!-- Project Card 4:  -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="007 robot/bevo_robot.jpg" alt="007 robot" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Competiton Robot</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Individually designed and constructed a design award winning remote-controled robot for a class-wide competition, leveraging a variety of fabrication techniques like sheet metal working and waterjet cutting</p>
+                    <a href="007 robot/007 robot portfolio.pdf" class="inline-block text-blue-600 font-medium hover:underline">View Project Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project Card 5:  -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="678 robot/678 robot.png" alt="678 robot" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Autonomous Line-Following Robot</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Designed an autonomous robot that uses a C++ algorithm, an H-bridge motor driver, and photoresistors to follow a drawn line, navigate a pre-designed course, and dynamically relocate its path if lost</p>
+                    <a href="678 robot/678 robot portfolio (1).pdf" class="inline-block text-blue-600 font-medium hover:underline">View Project Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project Card 6:  -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="00b toy/00b toy cropped.jpg" alt="00b toy" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Toy Product Design</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Designed and fabricated a blaster-style target game, employing a combination of RF and IR signals to establish communication between system components and a custom-designed central hub</p>
+                    <a href="00b toy/toy design portfolio.pdf" class="inline-block text-blue-600 font-medium hover:underline">View Project Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project Card 7:  -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                <img src="cryo pump/pump cad.png" alt="678 robot" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Cryogenic Pump</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Designed, fabricated, and tested a cryogenic pump prototype to efficiently transport liquid nitrogen, utilizing a novel impeller design to prevent cavitation</p>
+                    <a href="cryo pump/cryogenic pump portfolio.pdf" class="inline-block text-blue-600 font-medium hover:underline">View Project Details &rarr;</a>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 my-12 bg-white rounded-xl shadow-lg text-center">
+        <h2 class="text-4xl font-bold mb-6 text-gray-900">View My Resume</h2>
+        <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            For a full overview of my academic and professional experience, please download my resume.
+        </p>
+        <a href="Elliott__Drake_Resume_Sept_25.pdf" target="_blank" class="inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition duration-300">
+            Download Resume
+        </a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 my-12 text-center">
+        <h2 class="text-4xl font-bold mb-6 text-gray-900">Get in Touch</h2>
+        <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            I am actively seeking an entry-level mechanical engineering position and would love to discuss how my skills can contribute to your team.
+        </p>
+        <div class="flex justify-center items-center space-x-6 sm:space-x-8">
+            <!-- Email link -->
+            <a href="drake180@mit.edu" class="flex flex-col items-center group">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-gray-600 group-hover:text-blue-600 transition-colors">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.272 2.053l-7.487 3.744c-.266.133-.55.199-.838.199s-.572-.066-.838-.199l-7.487-3.744A2.25 2.25 0 0 1 2.25 6.993V6.75"/>
+                </svg>
+                <span class="mt-2 text-sm text-gray-600 group-hover:text-blue-600">Email</span>
+            </a>
+
+            <!-- LinkedIn link -->
+            <a href="https://www.linkedin.com/in/drake-elliott" target="_blank" class="flex flex-col items-center group">
+                <img src="linkedin logo.png" alt="LinkedIn Logo" class="w-10 h-10 group-hover:opacity-75 transition-opacity">
+                <span class="mt-2 text-sm text-gray-600 group-hover:text-blue-600">LinkedIn</span>
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>
